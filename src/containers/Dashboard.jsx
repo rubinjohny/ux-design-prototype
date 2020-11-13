@@ -1,32 +1,37 @@
 import React from "react"
 import {Row, Col} from 'antd'
 import {Card} from '../components/Card'
+import registration from '../icons/registration.png'
+import book from '../icons/reading-book.png'
+import accounting from '../icons/accounting.png'
+import id from '../icons/id.png'
+import survey from '../icons/survey.png'
 
 const cards = [
    {
       title:"Registration",
-      description:"Check your registration status, class schedule and add or drop classes",
-      icon:""
+      description:"Registration status, Course catalog,  and Add/Drop classes",
+      icon:registration
    },
    {
       title:"Student Records",
-      description:"View your holds, grades and transcripts",
-      icon:""
+      description:"Student schedule, Holds, Grades, Transcripts, Graduate Application",
+      icon: book
    },
    {
       title:"Student Accounts",
       description:"View your account summaries, statement/payment history and tax information",
-      icon:""
+      icon: accounting
    },
    {
       title:"Preferred First Name Option",
       description:"Add/Change/Delete preferred first name",
-      icon:""
+      icon: id
    },
    {
       title:"Teaching Effectivness Survey",
       description:"",
-      icon:""
+      icon: survey
    },
 ]
 
