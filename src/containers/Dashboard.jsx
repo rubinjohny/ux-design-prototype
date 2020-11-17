@@ -43,7 +43,7 @@ const cards = [
 export const Dashboard = () => {
    return(
       <div>
-         <Row justify="center">
+         <Row justify="center" style={{ width:"60%", marginLeft: "20%" }}>
             {cards.map((card, i) => {
                return (
                   <Col className="gutter-row" span={8} key={i}>
