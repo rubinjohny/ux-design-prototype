@@ -5,11 +5,109 @@
   background-color: #00543C;
 }
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+
 .card { 
   width: 250px;
-  height: 300px;
+  height: 350px;
   border:1px solid #CFCFCF;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+}
+
+.card a {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-top-section {
+  display: flex;
+  flex: 5;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-bottom-section {
+  display: flex;
+  flex:3;
+  flex-direction: column;
+  height: 100%;
+  background-color: #00543C;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.card-bottom-text{
+  display: flex;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+}
+
+.card-bottom-title {
+  color: white;
+  align-self: flex-end;
+  font-size: 18px;
+}
+
+.card-bottom-description {
+  color: white;
+  align-self: center;
+  font-size: 12px;
+}
+
+.subheader {
+  display: flex;
+  padding: 10px;
+}
+
+.subheader-left {
+  display: flex;
+  flex: 2; 
+  margin-left: 25px;
+  align-items: center;
+}
+
+.subheader-center{
+  display: flex;
+  flex: 2; 
+  justify-content: center;
+}
+
+.subheader-center span{
+  color: #00543C;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.breadcrumb-text {
+  color:#00543C; 
+  font-size:18px;
+}
+
+.grey-section {
+  background: #f5f5f5;
+  width: 50%; 
+  border-radius: 25px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.secondary-card-innercontainer {
+  border: 1px solid #CFCFCF;
+  padding: 20px 15px;
+  box-shadow: 1px 1px 5px #CFCFCF;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }

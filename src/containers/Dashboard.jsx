@@ -11,27 +11,32 @@ const cards = [
    {
       title:"Registration",
       description:"Registration status, Course catalog,  and Add/Drop classes",
-      icon:registration
+      icon:registration,
+      routeTo:"registration"
    },
    {
       title:"Student Records",
       description:"Student schedule, Holds, Grades, Transcripts, Graduate Application",
-      icon: book
+      icon: book,
+      routeTo:"student-records"
    },
    {
       title:"Student Accounts",
       description:"View your account summaries, statement/payment history and tax information",
-      icon: accounting
+      icon: accounting,
+      routeTo:"student-accounts"
    },
    {
       title:"Preferred First Name Option",
       description:"Add/Change/Delete preferred first name",
-      icon: id
+      icon: id,
+      routeTo:"name-options"
    },
    {
       title:"Teaching Effectivness Survey",
       description:"",
-      icon: survey
+      icon: survey,
+      routeTo:"survey"
    },
 ]
 
@@ -46,6 +51,7 @@ export const Dashboard = () => {
                         title={card.title}
                         description={card.description}
                         icon={card.icon}
+                        routeTo={card.routeTo}
                      />
                   </Col>
                )

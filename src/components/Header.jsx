@@ -35,7 +35,7 @@ export const Header = () => {
          <Row justify="space-between" style={{height:"100%"}}  >
             <Col span={6} style={{ height: "100%" }}>
                <div style={{ height: "100%" }}>
-                  <img src={"../icons/logo.png"} width="100%" height="100%" resizeMode="contain" style={{marginLeft:20, padding:15}}/>
+                  <img src={"../icons/logo.png"} width="100%" height="100%" style={{marginLeft:20, padding:15, objectFit:"contain"}}/>
                </div>
             </Col>
             <Col span={8}>
@@ -51,7 +51,7 @@ export const Header = () => {
                   </div>
                </div>
             </Col>
-            <Col span={4} style={{ alignItems: "center", display: "flex", justifyContent: "center"}}>
+            <Col span={6} style={{ alignItems: "center", display: "flex", justifyContent: "center"}}>
                <div>
                   <Dropdown overlay={menu}>
                      <DownCircleOutlined style ={{color:"white", fontSize:20, float:"right"}} />

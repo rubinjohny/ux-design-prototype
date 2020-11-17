@@ -6,6 +6,8 @@ import {
    Link
 } from "react-router-dom";
 import {Dashboard} from '../containers/Dashboard'
+import {Registration} from '../containers/Registration'
+import { UnderConstruction} from '../containers/UnderConstruction'
 
 export const Routes = () => {
 
@@ -14,11 +16,15 @@ export const Routes = () => {
          <Route exact path="/">
             <Dashboard />
          </Route>
-         <Route path="/about">
-            <span>about</span>
+         <Route path="/registration">
+            <Registration />
          </Route>
-         <Route path="/dashboard">
+         {/* <Route path="/dashboard">
             <Dashboard />
+         </Route> */}
+
+         <Route path="*">
+            <UnderConstruction />
          </Route>
       </Switch>
    )

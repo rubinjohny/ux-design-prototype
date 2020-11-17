@@ -1,24 +1,27 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
-export const Card = ({ title, description, icon}) => {
+export const Card = ({ title, description, icon, routeTo}) => {
 
    return(
-      <div style={{justifyContent:"center", display:"flex", padding:20, margin:20}}>
+      <div className="card-container">
          
          <div className="card">
-            <div style={{flex:5, display:"flex", justifyContent:"center", alignItems:"center"}}>
-               <img src={icon} width="60%" height="60%"/>
-            </div>
-            <div style={{ flex: 3, backgroundColor:"#00543C", borderBottomLeftRadius:25, borderBottomRightRadius:25}}>
-               <div style={{display: "flex", flexDirection:"column", flex:1, height:"100%"}}>
-                  <div style={{ flex: 1, textAlign: "center",display: "flex", justifyContent:"center"}}>
-                     <span style={{ color: "white", alignSelf: "center", fontSize: "18px"}}>{title}</span>
+            <Link to={`/${routeTo}`}>
+               <div className="card-top-section">
+                  <img src={icon} width="60%" height="60%" style={{objectFit:"contain"}} />
+               </div>
+
+               <div className="card-bottom-section">
+                  <div className="card-bottom-text">
+                     <span className="card-bottom-title" style={{ alignSelf: description ? "flex-end":"center"}}>{title}</span>
                   </div>
-                  { description && <div style={{ flex: 1, textAlign: "center", display: "flex", justifyContent: "center"}}>
-                     <span style={{ color: "white", alignSelf: "center", fontSize: "12px" }}>{description}</span>
+                  {description && <div className="card-bottom-text" style={{flex: 1.5}}>
+                     <span className="card-bottom-description">{description}</span>
                   </div>}
                </div>
-            </div>
+            </Link>
+
          </div>
       </div>
    )
